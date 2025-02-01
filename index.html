@@ -34,25 +34,26 @@
             shadow-intensity="1"
             style="width: 100%; max-width: 600px; height: 400px; display: block; margin: auto;">
         </model-viewer>
-              <!-- Buttons for Popovers -->
-              <div class="d-flex justify-content-center mt-4">
-                <button 
-                    class="btn btn-info m-2" 
-                    data-bs-toggle="popover" 
-                    title="Mosshead Warbonnet Info" 
-                    data-bs-content="The Mosshead Warbonnet is a fascinating fish with unique features."
-                    data-bs-placement="top">
-                    Fish Info
-                </button>
-                <button 
-                    class="btn btn-info m-2" 
-                    data-bs-toggle="popover" 
-                    title="Habitat" 
-                    data-bs-content="This fish is typically found in rocky habitats."
-                    data-bs-placement="top">
-                    Habitat
-                </button>
-            </div>
+        
+        <!-- Buttons for Popovers -->
+        <div class="d-flex justify-content-center mt-4">
+            <button 
+                class="btn btn-info m-2" 
+                data-bs-toggle="popover" 
+                title="Mosshead Warbonnet Info" 
+                data-bs-content="The Mosshead Warbonnet is a fascinating fish with unique features."
+                data-bs-placement="top">
+                Fish Info
+            </button>
+            <button 
+                class="btn btn-info m-2" 
+                data-bs-toggle="popover" 
+                title="Habitat" 
+                data-bs-content="This fish is typically found in rocky habitats."
+                data-bs-placement="top">
+                Habitat
+            </button>
+        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
@@ -62,6 +63,14 @@
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
+
+    <!-- Initialize Bootstrap Popovers -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+        });
+    </script>
 
 </body>
 </html>
