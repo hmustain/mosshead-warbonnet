@@ -1,0 +1,46 @@
+/* Dark Theme Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: Arial, sans-serif;
+}
+
+/* Centered container with a subtle glow */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Headings */
+h1 {
+    color: #00ffff; /* Cyan Rom'ys favorite color */
+    text-shadow: 0px 0px 10px rgba(0, 170, 255, 0.7);
+}
+
+/* Subtext */
+p {
+    color: #cccccc;
+}
+
+/* Styling links */
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #005577;
+    border-color: #004466;
+}
+
+.btn-primary:hover {
+    background-color: #0077aa;
+    border-color: #005577;
+}
