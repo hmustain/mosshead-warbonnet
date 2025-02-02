@@ -18,8 +18,35 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Warbonnet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#facts">Fun Facts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#model">3D Model</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Mosshead Warbonnet</h1>
+            <p class="lead">A fascinating little fish with a unique appearance and habitat.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <div class="container mt-5">
         <h1 class="text-center">Mosshead Warbonnet Project</h1>
 
@@ -62,7 +89,7 @@
                 class="btn btn-info m-2" 
                 data-bs-toggle="popover" 
                 title="Head" 
-                data-bs-content="The Mosshead Warbonnet has a punk rock mowhawk type head that resembles rocks to help it keep it self camoflauged."
+                data-bs-content="The Mosshead Warbonnet has a punk rock mohawk-type head that resembles rocks to help it camouflage."
                 data-bs-placement="top"
                 data-bs-trigger="focus">
                 Head
@@ -71,11 +98,11 @@
                 tabindex="0" 
                 class="btn btn-info m-2" 
                 data-bs-toggle="popover" 
-                title="Camoflauged" 
-                data-bs-content="This fish has a camoflauged body made up of scales to keep it protected from predators."
+                title="Camouflaged" 
+                data-bs-content="This fish has a camouflaged body made up of scales to keep it protected from predators."
                 data-bs-placement="top"
                 data-bs-trigger="focus">
-                Camoflauged
+                Camouflaged
             </a>
         </div>
     </div>
