@@ -122,3 +122,32 @@ a:hover {
     background-color: #0077aa;
     border-color: #005577;
 }
+
+.card-text{
+    color: #000;
+}
+
+/* Keep existing styles, then add these overrides: */
+
+/* Force navbar links to stay white (no black highlight on click/focus) */
+.navbar-dark .nav-link:focus,
+.navbar-dark .nav-link:active,
+.navbar-dark .nav-link.show,
+.navbar-dark .nav-link:visited {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+/* Remove any outline or background from the toggler when clicked/focused */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+/* Optionally, keep the collapse background transparent (if you see a black background after expanding) */
+.navbar-collapse.show {
+  background-color: transparent !important;
+}
+
